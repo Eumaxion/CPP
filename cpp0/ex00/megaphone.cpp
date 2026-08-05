@@ -19,7 +19,10 @@ int	main(int ac, char **av)
 	}
 	for (i = 1; av[i]; i++)
 	{
-		std::cout << "print each word in uppercase!\n";
+		std::cout << std::uppercase << av[i];
+		if (av[i + 1])
+			std::cout << " ";
 	}
+	std::cout << std::endl;
 	return (0);
 }

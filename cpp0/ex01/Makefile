@@ -1,6 +1,6 @@
-NAME = megaphone
+NAME = PhoneBook
 
-SRC = megaphone.cpp
+SRC = PhoneBook.cpp
 
 OBJS = $(SRC:.cpp=.o)
 
