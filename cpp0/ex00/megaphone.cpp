@@ -10,19 +10,27 @@ $> */
 
 int	main(int ac, char **av)
 {
-	int	i;
+	int	i, x;
+	char c;
 
 	if (ac == 1)
 	{
 		std::cout << "* LOUD AND UNBEARABLE FEEDBACK NOISE *\n";
 		return (0);
 	}
-	for (i = 1; av[i]; i++)
+  for (i = 1; av[i]; i++)
 	{
-		std::cout << std::uppercase << av[i];
-		if (av[i + 1])
-			std::cout << " ";
-	}
-	std::cout << std::endl;
-	return (0);
+		x = 0;
+    while (av[i][x])
+    {
+      c=av[i][x];
+      putchar(toupper(c));
+      x++;
+    }
+    if (av[i+1])
+      std::cout << " ";
+    else
+      std::cout << "\n";
+  }
+  return (0);
 }
