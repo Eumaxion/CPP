@@ -40,28 +40,3 @@ contact information, one field per line.
 Once a command has been correctly executed, the program waits for another one. It
 stops when the user inputs EXIT.
 Give a relevant name to your executable. */
-
-int Phonebook()
-{
-/*   It has an array of contacts.
-    ◦ It can store a maximum of 8 contacts. If the user tries to add a 9th contact,
-    replace the oldest one by the new one.
-    ◦ Please note that dynamic allocation is forbidden.
-    The contact fields are: 
-        first name
-        last name
-        nickname
-        phone number
-        darkest secret. 
-        
-    ADD()
-    SEARCH()
-    EXIT()
-    • Any other input is ignored
-    */
-}
-
-int Contact()
-{
-    /* Stands for a phonebook contact. */
-}
