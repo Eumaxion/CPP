@@ -1,6 +1,6 @@
 NAME = phonebook
 
-SRC = PhoneBook.cpp main.cpp
+SRC = main.cpp Phonebook.cpp Contacts.cpp
 
 OBJS = $(SRC:.cpp=.o)
 
@@ -18,11 +18,11 @@ $(NAME): $(OBJS)
 
 clean:
 	@$(RM) $(OBJS)
-	@echo "objs removed"
+	@echo "objects removed"
 
 fclean: clean
 	@$(RM) $(NAME)
-	@echo "program removed"
+	@echo "executable removed"
 
 re: fclean make
 
