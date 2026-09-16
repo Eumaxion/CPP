@@ -11,20 +11,16 @@
 #define RED		"\033[31m"
 #define RESET	"\033[0m"
 
-
 class PhoneBook
 {
 	private:
-	//attributess
 		static const int _MAX_CTTS = 8;
 		Contact _contacts[_MAX_CTTS];
 		int	_contactCount;
 
 	public:
-	//constructor && destructor;
 		PhoneBook();
 		~PhoneBook();
-	//methods
 		void addContact();
 		void searchContact();
 };
