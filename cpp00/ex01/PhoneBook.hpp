@@ -1,7 +1,8 @@
-#ifndef PhoneBook_HPP
-# define PhoneBook_HPP
+#ifndef PHONEBOOK_HPP
+# define PHONEBOOK_HPP
 
 # include <iostream>
+# include <iomanip>
 # include "Contacts.hpp"
 
 #define YELLOW	"\033[33m"

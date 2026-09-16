@@ -17,19 +17,17 @@ int	main(void)
 		}
 		else if (cmd.empty())
 			continue;
-		if (cmd == "EXIT")
+		if (cmd.compare("EXIT") == 0)
 		{
-			std::cout << GREEN << "\nThanks for using my awesome PhoneBook!!!\n" << RESET << std:: endl;
+			std::cout << GREEN << "\nThanks for using my PhoneBook!!!\n" << RESET << std:: endl;
 			return (0);
 		}
-		else if (cmd == "ADD")
+		else if (cmd.compare("ADD") == 0)
 			pb.addContact();
-		else if (cmd == "SEARCH")
+		else if (cmd.compare("SEARCH") == 0)
 			pb.searchContact();
 		else
-		{
 			std::cout << RED << "Invalid command!\n" << RESET << std::endl;
-		}
 	}
 	return (0);
-}
+} 

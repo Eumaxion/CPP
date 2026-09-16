@@ -17,13 +17,13 @@ class Contact
 		Contact();
 		~Contact();
 	//Setters
-		void setFistName(const std::string &_firstName);
-		void setLastName(const std::string &_lastName);
-		void setNickName(const std::string &_nickName);
-		void setPhoneNumber(const std::string &_phoneNumber);
-		void setDarkestSecret(const std::string &_darkestSecret);
+		void setFirstName(const std::string &firstName);
+		void setLastName(const std::string &lastName);
+		void setNickName(const std::string &nickName);
+		void setPhoneNumber(const std::string &phoneNumber);
+		void setDarkestSecret(const std::string &darkestSecret);
 	//Getters
-		std::string getFistName() const;
+		std::string getFirstName() const;
 		std::string getLastName() const;
 		std::string getNickName() const;
 		std::string getPhoneNumber() const;
