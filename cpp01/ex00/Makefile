@@ -1,3 +1,15 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: mlima-si <mlima-si@student.42porto.com>    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2026/09/17 18:33:37 by mlima-si          #+#    #+#              #
+#    Updated: 2026/09/17 18:33:38 by mlima-si         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
 NAME = BraiiiiiiinnnzzzZ
 
 SRC = main.cpp Zombie.cpp newZombie.cpp randomChump.cpp
@@ -6,7 +18,7 @@ OBJS = $(SRC:.cpp=.o)
 
 CC = c++
 
-CFLAGS = -Wall -Werror -Wextra -std=c++98
+CFLAGS = -Wall -Werror -Wextra -g -std=c++98
 
 RM = rm -rf
 

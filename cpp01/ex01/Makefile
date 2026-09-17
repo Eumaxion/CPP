@@ -1,6 +1,18 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: mlima-si <mlima-si@student.42porto.com>    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2026/09/17 19:42:24 by mlima-si          #+#    #+#              #
+#    Updated: 2026/09/17 19:42:25 by mlima-si         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
 NAME = Moar_brainz
 
-SRC = main.cpp zombie.cpp zombieHorde.cpp
+SRC = main.cpp Zombie.cpp zombieHorde.cpp
 
 OBJS = $(SRC:.cpp=.o)
 
