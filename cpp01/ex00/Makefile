@@ -1,6 +1,6 @@
 NAME = BraiiiiiiinnnzzzZ
 
-SRC = main.cpp zombie.cpp newZombie.cpp randomChump.cpp
+SRC = main.cpp Zombie.cpp newZombie.cpp randomChump.cpp
 
 OBJS = $(SRC:.cpp=.o)
 
