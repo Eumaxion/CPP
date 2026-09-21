@@ -6,7 +6,7 @@
 /*   By: mlima-si <mlima-si@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/17 20:22:09 by mlima-si          #+#    #+#             */
-/*   Updated: 2026/09/17 21:07:07 by mlima-si         ###   ########.fr       */
+/*   Updated: 2026/09/21 17:43:19 by mlima-si         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,14 +21,17 @@
 #define RED		"\033[31m"
 #define RESET	"\033[0m"
 
+
 class Weapon
 {
-	private:
-		std::string type;
-	public:
-		Weapon::getType();
-		Weapon::setType();
-
+    private:
+        std::string _type;
+        
+    public:
+        Weapon(std::string type);
+        ~Weapon();
+        void setType(std::string newType);
+        const std::string &getType() const;
 };
 
 #endif

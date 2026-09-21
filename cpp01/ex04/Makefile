@@ -1,4 +1,4 @@
-NAME = Sed_is_for_losers
+NAME = ft_sed
 
 SRC = main.cpp
 
