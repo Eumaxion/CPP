@@ -1,3 +1,15 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: mlima-si <mlima-si@student.42porto.com>    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2026/09/22 21:30:46 by mlima-si          #+#    #+#              #
+#    Updated: 2026/09/22 21:30:47 by mlima-si         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
 NAME = Repetitive_work
 
 SRC = main.cpp ClapTrap.cpp ScavTrap.cpp FragTrap.cpp
@@ -24,6 +36,6 @@ fclean: clean
 	@$(RM) $(NAME)
 	@echo "program removed"
 
-re: fclean make
+re: fclean all
 
 .PHONY: all clean fclean re
