@@ -6,11 +6,11 @@
 #    By: mlima-si <mlima-si@student.42porto.com>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/09/22 21:30:03 by mlima-si          #+#    #+#              #
-#    Updated: 2026/09/22 21:30:04 by mlima-si         ###   ########.fr        #
+#    Updated: 2026/09/23 13:10:35 by mlima-si         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = Aaaaand..._OPEN
+NAME = clap
 
 SRC = main.cpp ClapTrap.cpp
 

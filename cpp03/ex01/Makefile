@@ -6,11 +6,11 @@
 #    By: mlima-si <mlima-si@student.42porto.com>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/09/22 21:30:24 by mlima-si          #+#    #+#              #
-#    Updated: 2026/09/22 21:30:25 by mlima-si         ###   ########.fr        #
+#    Updated: 2026/09/23 14:13:18 by mlima-si         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME =Serena,_my_love
+NAME = scav
 
 SRC = main.cpp ClapTrap.cpp ScavTrap.cpp
 

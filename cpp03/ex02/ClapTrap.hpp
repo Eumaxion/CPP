@@ -6,7 +6,7 @@
 /*   By: mlima-si <mlima-si@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/22 21:30:35 by mlima-si          #+#    #+#             */
-/*   Updated: 2026/09/22 22:10:21 by mlima-si         ###   ########.fr       */
+/*   Updated: 2026/09/23 14:14:03 by mlima-si         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@
 #define RESET	"\033[0m"
 
 class ClapTrap
-{
+{ 
 	protected:
 		std::string	_name;
 		int         _hitPoints;

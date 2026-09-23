@@ -6,7 +6,7 @@
 /*   By: mlima-si <mlima-si@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/22 21:29:55 by mlima-si          #+#    #+#             */
-/*   Updated: 2026/09/22 22:21:17 by mlima-si         ###   ########.fr       */
+/*   Updated: 2026/09/23 12:43:18 by mlima-si         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ class ClapTrap
 		ClapTrap(const std::string &name);
 		ClapTrap(const ClapTrap &other);
 		ClapTrap &operator=(const ClapTrap &other);
-		virtual ~ClapTrap();
+		~ClapTrap();
 
 		void attack(const std::string &target);
 		void takeDamage(unsigned int amount);

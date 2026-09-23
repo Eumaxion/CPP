@@ -6,15 +6,18 @@
 /*   By: mlima-si <mlima-si@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/22 21:30:27 by mlima-si          #+#    #+#             */
-/*   Updated: 2026/09/22 21:30:28 by mlima-si         ###   ########.fr       */
+/*   Updated: 2026/09/23 16:14:45 by mlima-si         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ScavTrap.hpp"
 
-ScavTrap::ScavTrap() : ClapTrap(), _name("default"), _hitPoints(100), _energyPoints(50), _attackDamage(20)
+ScavTrap::ScavTrap() : ClapTrap()
 {
-	std::cout << BLUE << "ScavTrap default constructor called" << RESET << std::endl;
+	_hitPoints = 100;
+	_energyPoints = 50;
+	_attackDamage = 20;
+	std::cout << BLUE << "ScavTrap: Default constructor called" << RESET << std::endl;
 }
 
 ScavTrap::ScavTrap(const std::string &name): ClapTrap(name)
@@ -22,19 +25,24 @@ ScavTrap::ScavTrap(const std::string &name): ClapTrap(name)
 	_hitPoints = 100;
 	_energyPoints = 50;
 	_attackDamage = 20;
-
 	std::cout << BLUE << "ScavTrap constructor called for " << _name << RESET << std::endl;
 }
 
-ScavTrap::ScavTrap(const ScavTrap &other) : ClapTrap(other)
+ScavTrap::ScavTrap(const ScavTrap &copy) : ClapTrap(copy)
 {
 	std::cout << BLUE << "ScavTrap copy constructor called" << RESET << std::endl;
 }
 
-ScavTrap &ScavTrap::operator=(const ScavTrap &other)
+ScavTrap &ScavTrap::operator=(const ScavTrap &copy)
 {
-	if (this != &other)
-		ClapTrap::operator=(other);
+	if (this != &copy)
+	{
+		_name = copy._name;
+		_hitPoints = copy._hitPoints;
+		_energyPoints = copy._energyPoints;
+		_attackDamage = copy._attackDamage;	
+	}
+	std::cout << BLUE << "ScavTrap operator= constructor called" << RESET << std::endl;
 	return *this;
 }
 

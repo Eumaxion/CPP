@@ -6,11 +6,11 @@
 #    By: mlima-si <mlima-si@student.42porto.com>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/09/22 21:30:46 by mlima-si          #+#    #+#              #
-#    Updated: 2026/09/22 21:30:47 by mlima-si         ###   ########.fr        #
+#    Updated: 2026/09/23 14:13:36 by mlima-si         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = Repetitive_work
+NAME = frag
 
 SRC = main.cpp ClapTrap.cpp ScavTrap.cpp FragTrap.cpp
 
