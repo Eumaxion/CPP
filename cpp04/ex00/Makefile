@@ -1,6 +1,18 @@
-NAME = Polymorphism
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: mlima-si <mlima-si@student.42porto.com>    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2026/09/23 20:14:09 by mlima-si          #+#    #+#              #
+#    Updated: 2026/09/23 20:14:10 by mlima-si         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
 
-SRC = main.cpp Polymorphism.cpp
+NAME = animals
+
+SRC = main.cpp Animal.cpp Cat.cpp Dog.cpp WrongAnimal.cpp WrongCat.cpp
 
 OBJS = $(SRC:.cpp=.o)
 
@@ -24,6 +36,6 @@ fclean: clean
 	@$(RM) $(NAME)
 	@echo "program removed"
 
-re: fclean make
+re: fclean all
 
 .PHONY: all clean fclean re

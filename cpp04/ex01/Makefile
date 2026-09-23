@@ -1,6 +1,18 @@
-NAME = I_don_t_want_to_set_the_world_on_fire
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: mlima-si <mlima-si@student.42porto.com>    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2026/09/23 20:13:58 by mlima-si          #+#    #+#              #
+#    Updated: 2026/09/23 20:13:58 by mlima-si         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
 
-SRC = main.cpp
+NAME = brains
+
+SRC = main.cpp Animal.cpp Cat.cpp Dog.cpp WrongAnimal.cpp WrongCat.cpp Brain.cpp
 
 OBJS = $(SRC:.cpp=.o)
 
@@ -24,6 +36,6 @@ fclean: clean
 	@$(RM) $(NAME)
 	@echo "program removed"
 
-re: fclean make
+re: fclean all
 
 .PHONY: all clean fclean re
